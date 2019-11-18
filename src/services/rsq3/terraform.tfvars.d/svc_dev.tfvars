@@ -39,7 +39,7 @@ private_ips                          = []
 network_interface                    = []
 associate_public_ip_address          = true
 
-subnet_id                            = ""
+subnet_id                            = "subnet-cf10b994"
 subnet_ids                           = []
 
 # tags

@@ -1,5 +1,5 @@
 provider "aws" {
   region                  = var.region
-  shared_credentials_file = "../../../auth/credentials"
-  profile                 = "customprofile"
+  shared_credentials_file = "/opt/terraform-git/auth/credentials"
+  profile                 = "default"
 }
