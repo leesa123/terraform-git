@@ -53,7 +53,7 @@ module "ec2_cluster" {
 }
 
 # reference   : https://www.terraform.io/docs/providers/aws/r/eip.html
-resource "aws_eip" "lb" {
+resource "aws_eip" "this" {
   count    = var.associate_public_ip_address == true ? var.instance_count : 0
   instance = "${element(module.ec2_cluster.id, count.index)}"
   vpc      = true
