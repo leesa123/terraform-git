@@ -4,7 +4,7 @@ output "availability_zone" {
   value = module.ec2_cluster.availability_zone
 }
 
-output "primary_network_interface_id " {
+output "primary_network_interface_id" {
   value = module.ec2_cluster.primary_network_interface_id 
 }
 
